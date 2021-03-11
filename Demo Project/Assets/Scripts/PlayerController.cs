@@ -42,6 +42,9 @@ public class PlayerController : MonoBehaviour {
         if (paintingConrollerEnabled) {
             CheckInputForPaintingController();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
     }
 
     // Player controller
